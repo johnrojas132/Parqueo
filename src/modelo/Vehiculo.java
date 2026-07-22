@@ -8,8 +8,9 @@ public class Vehiculo {
     private int id;
     private String placa;
     private String propietario;
-    private String tipoVehiculo;
+    private String telefono;
     private int numeroEspacio;
+    private String tipoVehiculo;
     private Timestamp horaEntrada;
     private String estado;
 
@@ -18,16 +19,15 @@ public class Vehiculo {
     }
 
     //constructor con todos los datos
-    public Vehiculo(int id, String placa, String propietario, String tipoVehiculo,
-                     int numeroEspacio, Timestamp horaEntrada, String estado) {
-        this.id = id;
+    public Vehiculo(String placa, String propietario, String telefono,
+                     int numeroEspacio, String tipoVehiculo) {
         this.placa = placa;
         this.propietario = propietario;
-        this.tipoVehiculo = tipoVehiculo;
+        this.telefono = telefono;
         this.numeroEspacio = numeroEspacio;
-        this.horaEntrada = horaEntrada;
-        this.estado = estado;
-    }
+        this.tipoVehiculo = tipoVehiculo;
+        this.estado = "Activo";
+     }
 
     //getters y setters, para leer y modificar cada dato
 
@@ -55,12 +55,12 @@ public class Vehiculo {
         this.propietario = propietario;
     }
 
-    public String getTipoVehiculo() {
-        return tipoVehiculo;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setTipoVehiculo(String tipoVehiculo) {
-        this.tipoVehiculo = tipoVehiculo;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public int getNumeroEspacio() {
@@ -69,6 +69,14 @@ public class Vehiculo {
 
     public void setNumeroEspacio(int numeroEspacio) {
         this.numeroEspacio = numeroEspacio;
+    }
+
+    public String getTipoVehiculo() {
+        return tipoVehiculo;
+    }
+
+    public void setTipoVehiculo(String tipoVehiculo) {
+        this.tipoVehiculo = tipoVehiculo;
     }
 
     public Timestamp getHoraEntrada() {
