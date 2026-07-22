@@ -9,10 +9,11 @@ package excepciones;
  * @author Chess
  */
 public class NegocioException extends Exception {
+    //Marca cuando el error nace de aqui mismo
       public NegocioException(String mensaje) {
         super(mensaje);
     }
-
+      //Se usa para marcar errores y mostrar mensajes mas claros
     public NegocioException(String mensaje, Throwable causa) {
         super(mensaje, causa);
     }
