@@ -11,7 +11,7 @@ public class ConexionBD {
     private static final String PUERTO = "3306";
     private static final String BASE_DATOS = "sistema_parqueo"; 
     private static final String USUARIO = "root";
-    private static final String CONTRASENA = "JohnRojas132";
+    private static final String CONTRASENA = "0004";
 
     //URL con los datos de arriba
     private static final String URL = "jdbc:mysql://" + SERVIDOR + ":" + PUERTO + "/" + BASE_DATOS
